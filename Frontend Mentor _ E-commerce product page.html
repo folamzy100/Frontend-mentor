@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  
+  
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+<link rel="icon" type="image/png" sizes="32x32" href="http://127.0.0.1:5500/images/favicon-32x32.png"><link rel="stylesheet" href="./Frontend Mentor _ E-commerce product page_files/style.css"></head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+    <img src="./Frontend Mentor _ E-commerce product page_files/logo.svg" alt="" class="logo">
+    </div>
+    <ul class="nav">
+      <li>
+        <a href="http://127.0.0.1:5500/index.html#">Collections</a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/index.html#">Men</a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/index.html#">Women</a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/index.html#">About</a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/index.html#">Contact</a>
+      </li>
+      <img src="./Frontend Mentor _ E-commerce product page_files/icon-cart.svg">
+      <img src="./Frontend Mentor _ E-commerce product page_files/image-avatar.png">
+    </ul>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+    <img src="./Frontend Mentor _ E-commerce product page_files/image-product-1-thumbnail.jpg">
+    <div class="small images">
+    <img src="./Frontend Mentor _ E-commerce product page_files/image-product-1-thumbnail.jpg">
+    <img src="./Frontend Mentor _ E-commerce product page_files/image-product-2-thumbnail.jpg">
+    <img src="./Frontend Mentor _ E-commerce product page_files/image-product-3-thumbnail.jpg">
+    <img src="./Frontend Mentor _ E-commerce product page_files/image-product-4-thumbnail.jpg">
+    </div>
+
+      <p>Sneaker Company</p>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.  
+      </p>
+      <div class="amount">
+        <p>$125.00</p>
+        <p>50%</p>
+      </div>
+      <div class="cross-amount">
+        <p>$250.00</p>
+      </div>
+      <div class="Carts">
+      <div class="button">
+        <button>-</button>
+        <input type="text">
+        <button>+</button>
+        <button>Add to cart</button>
+      </div>
+      </div>
+    </div>
+  </header>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="http://127.0.0.1:5500/index.html#">Your Name Here</a>.
+  </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
